@@ -1,16 +1,35 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Dominic's List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+      .page-footer {background-color: white;}
+    </style>
   </head>
   <body>
+    <div class="col s12 center"><h1>Dominic's List</h1></div>
+    <div class="divider"></div>
     <div class="container">
-      <!-- for listing in all_listings -->
-      <!-- show the listing with image and item -->
+       <div class="container ">
+         <a href="#" class="black-text"><h4 class='center card-panel hoverable'>Title 1</h4></a>
+         <a href="#" class="black-text"><h4 class='center card-panel hoverable'>Title 2</h4></a>
+         <a href="#" class="black-text"><h4 class='center card-panel hoverable'>Title 3</h4></a>
+         <a href="#" class="black-text"><h4 class='center card-panel hoverable'>Title 4</h4></a>
+       </div>
     </div>
+    <!-- django code bellow -->
+    <!--
+    {% for listing in listings: %}
+      <a href="{{listing_page}}" class="black-text">
+      <h4 class='center card-panel hoverable'>{{Title}}</h4> <br>
+      {{post_date}}{{post_price}}
+      </a>
+    {% endfor %}
+   -->
+    <div class="divider"></div>
+    <div class="page-footer white-background"><h1 class="center black-text">footer</h1></div>
   </body>
 </html>
