@@ -14,17 +14,23 @@
   </head>
   <body>
     <header class="col s12 m6 l6 center"><h1>Dominic's List</h1></header>
-    <main>
     <div class="divider"></div>
-    <div class="nav-wrapper">
-      <div class="col s12">
-        <a href="#" class="breadcrumb">First</a>
-        <a href="#" class="breadcrumb">Second</a>
-        <a href="#" class="breadcrumb">Third</a>
-    </div>
-    <div class="container">
-       <div class="container ">
-         <ul class="collapsible"> <!-- colapsable listing -->
+    <main>
+     <!--Breadcrumbs
+      <div class="container">
+        <nav>
+          <div class="nav-wrapper">
+            <div class="col s12">
+              <a href="#!" class="breadcrumb black-text">Home</a>
+              <a href="#!" class="breadcrumb black-text">Categorie</a>
+              <a href="#!" class="breadcrumb black-text">Sub-Categorie</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    -->
+        <div class="container "> <!-- collapsable items -->
+          <ul class="collapsible">
            <li>
              <div class="collapsible-header"><i class="material-icons">image</i> First Item For Sale - Location - ₱0.00</div>
              <div class="collapsible-body">
@@ -170,16 +176,26 @@
              </div>
            </li>
          </ul>
-       </div>
-    </div>
+        </div>
+      <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
+      <div class="tap-target" data-target="menu">
+        <div class="tap-target-content">
+          <h5>Title</h5>
+          <p>A bunch of text</p>
+        </div>
+      </div>
     </main>
     <!-- django code bellow -->
-    <!--
+    <!-- colapsable items
     {% for listing in listings: %}
-      <a href="{{listing_page}}" class="black-text">
-      <h4 class='center card-panel hoverable'>{{Title}}</h4> <br>
-      {{post_date}}{{post_price}}
-      </a>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">image</i>{{Item Name}} - {{location}} - {{price}}</div>
+        <div class="collapsible-body">
+          {{IMAGE HERE}}
+          <p>{{item_description}}</p>
+          <a href="#" class="s12 m6 l6">Show contact details.</a><a href="#" class="s12 m6 l6 right">Date Posted</a>
+        </div>
+      </li>
     {% endfor %}
    -->
     <div class="divider"></div>
